@@ -1,34 +1,54 @@
+import Link from 'next/link';
+
+const footerLinks = {
+  Academics: [
+    { href: '/academics/departments', label: 'Departments' },
+    { href: '/academics/robotics-ai', label: 'Robotics & AI' },
+    { href: '/academics/assessment', label: 'Assessment' },
+  ],
+  Admissions: [
+    { href: '/admissions/icse', label: 'ICSE' },
+    { href: '/admissions/isc', label: 'ISC' },
+    { href: '/admissions/kindergarten', label: 'Kindergarten' },
+    { href: '/admissions/virtual-tour', label: 'Virtual Tour' },
+  ],
+  Compliance: [
+    { href: '/about/compliance', label: 'Mandatory Disclosures' },
+    { href: '/about/compliance', label: 'Policies' },
+    { href: '/about/compliance', label: 'PTA Minutes' },
+  ],
+  'Quick Links': [
+    { href: '#', label: 'Calendar (ICS)' },
+    { href: '#', label: 'Login' },
+    { href: '#', label: 'Careers' },
+    { href: '/about/compliance', label: 'Privacy' },
+  ],
+};
+
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-8">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h2 className="text-2xl font-bold mb-4">School Name</h2>
-            <p>123 School Street, Bangalore, India</p>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-            <ul>
-              <li><a href="/" className="hover:underline">Home</a></li>
-              <li><a href="/about" className="hover:underline">About Us</a></li>
-              <li><a href="/admissions" className="hover:underline">Admissions</a></li>
-              <li><a href="/academics" className="hover:underline">Academics</a></li>
-              <li><a href="/contact" className="hover:underline">Contact Us</a></li>
+    <footer className="border-t bg-sh-beige py-12" role="contentinfo">
+      <div className="container mx-auto grid max-w-7xl grid-cols-2 gap-8 px-4 md:grid-cols-4">
+        {Object.entries(footerLinks).map(([title, links]) => (
+          <div key={title}>
+            <h3 className="mb-4 font-bold uppercase text-sh-navy">{title}</h3>
+            <ul className="space-y-2">
+              {links.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-sh-navy hover:text-sh-red"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
-          <div>
-            <h3 className="text-xl font-bold mb-4">Connect With Us</h3>
-            <div className="flex space-x-4">
-              <a href="#" className="hover:text-gray-400">Facebook</a>
-              <a href="#" className="hover:text-gray-400">Twitter</a>
-              <a href="#" className="hover:text-gray-400">Instagram</a>
-            </div>
-          </div>
-        </div>
-        <div className="text-center mt-8 pt-4 border-t border-gray-700">
-          <p>&copy; 2024 School Name. All Rights Reserved.</p>
-        </div>
+        ))}
+      </div>
+      <div className="container mx-auto mt-8 max-w-7xl px-4 text-center text-sm text-sh-navy">
+        <p>&copy; {new Date().getFullYear()} Sacred Heart Girls' High School. All Rights Reserved.</p>
       </div>
     </footer>
   );

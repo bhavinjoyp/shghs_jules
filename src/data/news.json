@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Annual Day Celebration",
+    "date": "2023-12-15",
+    "image": "https://source.unsplash.com/400x300/?news,event",
+    "excerpt": "Our Annual Day was a grand success, showcasing the immense talent of our students."
+  },
+  {
+    "id": 2,
+    "title": "Science Exhibition",
+    "date": "2023-11-20",
+    "image": "https://source.unsplash.com/400x300/?science,exhibition",
+    "excerpt": "Students from classes 6 to 12 presented innovative science projects."
+  },
+  {
+    "id": 3,
+    "title": "Sports Day",
+    "date": "2023-10-25",
+    "image": "https://source.unsplash.com/400x300/?sports,day",
+    "excerpt": "A day of fierce competition and sportsmanship."
+  }
+]
