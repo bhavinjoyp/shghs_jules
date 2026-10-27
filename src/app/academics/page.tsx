@@ -16,7 +16,7 @@ export default function AcademicsPage() {
         </p>
         <h2 className="mt-12 text-3xl font-bold">Assessment</h2>
         <p className="mt-4">
-          We use a variety of assessment methods to monitor our students' progress and provide them with feedback on their learning.
+          We use a variety of assessment methods to monitor our students&apos; progress and provide them with feedback on their learning.
         </p>
         <h2 className="mt-12 text-3xl font-bold">Counselling</h2>
         <p className="mt-4">

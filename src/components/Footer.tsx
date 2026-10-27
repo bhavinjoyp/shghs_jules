@@ -9,7 +9,7 @@ const footerLinks = {
   Admissions: [
     { href: '/admissions/icse', label: 'ICSE' },
     { href: '/admissions/isc', label: 'ISC' },
-    { href: '/admissions/kindergarten', label: 'Kindergarten' },
+    { href: '/admissions#nursery', label: 'Nursery School' },
     { href: '/admissions/virtual-tour', label: 'Virtual Tour' },
   ],
   Compliance: [
@@ -48,7 +48,7 @@ export default function Footer() {
         ))}
       </div>
       <div className="container mx-auto mt-8 max-w-7xl px-4 text-center text-sm text-sh-navy">
-        <p>&copy; {new Date().getFullYear()} Sacred Heart Girls' High School. All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Sacred Heart Girls&apos; High School. All Rights Reserved.</p>
       </div>
     </footer>
   );

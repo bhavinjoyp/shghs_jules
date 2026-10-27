@@ -17,7 +17,7 @@ export default function Home() {
               Empowering Young Women Through 170 Years of Excellence
             </h1>
             <p className="mt-4 text-lg md:text-xl">
-              Sacred Heart Girls' High School
+              Sacred Heart Girls&apos; High School
             </p>
             <div className="mt-8 space-x-4">
               <Button size="large">Apply ICSE 1-10</Button>
